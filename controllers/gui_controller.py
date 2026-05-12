@@ -65,7 +65,7 @@ def on_them_sv():
     """Bật cửa sổ Pop-up để thêm mới 1 sinh viên."""
     logger.info("Người dùng click Thêm Sinh viên.")
     global app_df
-    data = gui_view.hien_thi_form_sinh_vien(app_root, is_edit=False)
+    data = gui_view.hien_thi_form_benh_nhan(app_root, is_edit=False)
     if data:
         app_df, ok, msg = diemdanh.them_sinh_vien(app_df, data)
         if ok:
@@ -108,7 +108,7 @@ def on_sua_sv():
     
     current_data = {"msv": msv, "ho_ten": hoten, "gioi_tinh": gioi_tinh, "lop": lop, "sdt": sdt}
     
-    data = gui_view.hien_thi_form_sinh_vien(app_root, is_edit=True, current_data=current_data)
+    data = gui_view.hien_thi_form_benh_nhan(app_root, is_edit=True, current_data=current_data)
     if data:
         app_df, ok, msg = diemdanh.sua_sinh_vien(app_df, msv, data)
         if ok:
