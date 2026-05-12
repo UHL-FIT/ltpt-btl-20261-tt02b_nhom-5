@@ -80,13 +80,13 @@ def tao_giao_dien_chinh(root):
     frame_actions = tk.Frame(frame_top)
     frame_actions.pack(side=tk.LEFT)
     
-    ui['btn_them'] = ttk.Button(frame_actions, text="+ Thêm Sinh viên")
+    ui['btn_them'] = ttk.Button(frame_actions, text="+ Thêm Bệnh nhân")
     ui['btn_them'].pack(side=tk.LEFT, padx=2)
     
     ui['btn_sua'] = ttk.Button(frame_actions, text="Sửa thông tin")
     ui['btn_sua'].pack(side=tk.LEFT, padx=2)
     
-    ui['btn_xoa'] = ttk.Button(frame_actions, text="Xóa SV")
+    ui['btn_xoa'] = ttk.Button(frame_actions, text="Xóa BN")
     ui['btn_xoa'].pack(side=tk.LEFT, padx=2)
     
     ttk.Separator(frame_actions, orient=tk.VERTICAL).pack(side=tk.LEFT, fill=tk.Y, padx=5)
@@ -106,7 +106,7 @@ def tao_giao_dien_chinh(root):
     
     tk.Label(frame_search, text="Tìm theo:").pack(side=tk.LEFT, padx=(10, 2))
     
-    ui['cbo_search_by'] = ttk.Combobox(frame_search, values=["Tất cả", "MSV", "Họ Tên", "Giới tính", "SĐT"], state="readonly", width=10)
+    ui['cbo_search_by'] = ttk.Combobox(frame_search, values=["Tất cả", "MBN", "Họ Tên", "Giới tính", "Chiều cao", "Cân nặng"], state="readonly", width=10)
     ui['cbo_search_by'].set("Tất cả")
     ui['cbo_search_by'].pack(side=tk.LEFT, padx=2)
     
@@ -130,7 +130,7 @@ def tao_giao_dien_chinh(root):
     scroll_x.pack(side=tk.BOTTOM, fill=tk.X)
     
     # Columns definition
-    cols = ["Chọn", "STT", "MSV", "Họ Tên", "Giới tính", "Lớp", "SĐT"] + [f"T{i}" for i in range(1, 16)] + ["Số lần làm BT", "Vi phạm", "Chuyên Cần", "Cảnh Báo"]
+    cols = ["Chọn", "STT", "MBN", "Họ Tên", "Giới tính", "Chiều cao(cm)", "Cân nặng(kg)"] #+ [f"T{i}" for i in range(1, 16)] #+ ["Số lần làm BT", "Vi phạm", "Chuyên Cần", "Cảnh Báo"]
     ui['cols'] = cols
     
     tree = ttk.Treeview(frame_mid, columns=cols, show="headings", 
@@ -150,13 +150,13 @@ def tao_giao_dien_chinh(root):
         
         if col == "Chọn": w = 45
         elif col == "STT": w = 40
-        elif col == "MSV": w = 80
+        elif col == "MBN": w = 80
         elif col == "Họ Tên": w = 180
         elif col == "Giới tính": w = 70
-        elif col == "Lớp": w = 80
-        elif col == "SĐT": w = 100
+        elif col == "Chiều cao(cm)": w = 80
+        elif col == "Cân nặng(kg)": w = 100
         elif col.startswith("T"): w = 45
-        elif col in ["Số lần làm BT", "Vi phạm", "Chuyên Cần"]: w = 90
+        #elif col in ["Số lần làm BT", "Vi phạm", "Chuyên Cần"]: w = 90
         else: w = 100
         tree.column(col, width=w, anchor=tk.CENTER if col != "Họ Tên" else tk.W)
         
@@ -166,20 +166,20 @@ def tao_giao_dien_chinh(root):
     frame_bot = tk.Frame(root, pady=10, padx=10, bg="#e0e0e0")
     frame_bot.pack(fill=tk.X)
     
-    ui['lbl_si_so'] = tk.Label(frame_bot, text="Sĩ số: 0", font=('Arial', 11, 'bold'), bg="#e0e0e0")
-    ui['lbl_si_so'].pack(side=tk.LEFT, padx=20)
+    #ui['lbl_si_so'] = tk.Label(frame_bot, text="Sĩ số: 0", font=('Arial', 11, 'bold'), bg="#e0e0e0")
+    #ui['lbl_si_so'].pack(side=tk.LEFT, padx=20)
     
-    ui['lbl_canh_bao'] = tk.Label(frame_bot, text="Cấm thi: 0", font=('Arial', 11, 'bold'), fg="red", bg="#e0e0e0")
-    ui['lbl_canh_bao'].pack(side=tk.LEFT, padx=20)
+    #ui['lbl_canh_bao'] = tk.Label(frame_bot, text="Cấm thi: 0", font=('Arial', 11, 'bold'), fg="red", bg="#e0e0e0")
+    #ui['lbl_canh_bao'].pack(side=tk.LEFT, padx=20)
     
-    ui['lbl_diem_tb'] = tk.Label(frame_bot, text="Điểm CC TB: 0.00", font=('Arial', 11, 'bold'), bg="#e0e0e0")
-    ui['lbl_diem_tb'].pack(side=tk.LEFT, padx=20)
+    #ui['lbl_diem_tb'] = tk.Label(frame_bot, text="Điểm CC TB: 0.00", font=('Arial', 11, 'bold'), bg="#e0e0e0")
+    #ui['lbl_diem_tb'].pack(side=tk.LEFT, padx=20)
     
-    lbl_cong_thuc = tk.Label(frame_bot, text="Công thức CC = 10 - (K * 2) + (BT / 2) - Vi_phạm", font=('Arial', 10, 'italic'), bg="#e0e0e0", fg="#333")
-    lbl_cong_thuc.pack(side=tk.LEFT, padx=20)
+    #lbl_cong_thuc = tk.Label(frame_bot, text="Công thức CC = 10 - (K * 2) + (BT / 2) - Vi_phạm", font=('Arial', 10, 'italic'), bg="#e0e0e0", fg="#333")
+    #lbl_cong_thuc.pack(side=tk.LEFT, padx=20)
     
-    lbl_huong_dan = tk.Label(frame_bot, text="💡 Double-click vào ô Tuần/BT/VP để chỉnh sửa", font=('Arial', 10, 'italic'), bg="#e0e0e0", fg="#555")
-    lbl_huong_dan.pack(side=tk.RIGHT, padx=10)
+    #lbl_huong_dan = tk.Label(frame_bot, text="💡 Double-click vào ô Tuần/BT/VP để chỉnh sửa", font=('Arial', 10, 'italic'), bg="#e0e0e0", fg="#555")
+    #lbl_huong_dan.pack(side=tk.RIGHT, padx=10)
 
     return ui
 
@@ -190,7 +190,7 @@ def hien_thi_bang(ui, df):
 
     Args:
         ui (dict): Dictionary chứa các widget giao diện.
-        df (pandas.DataFrame): Bảng dữ liệu sinh viên.
+        df (pandas.DataFrame): Bảng dữ liệu bệnh nhân.
     """
     tree = ui['tree']
     tree.heading("Chọn", text="☐")  # Reset header
@@ -205,70 +205,70 @@ def hien_thi_bang(ui, df):
         values = [
             "☐",  # Mặc định là chưa chọn
             str(idx), # STT
-            row.get("msv", ""),
+            row.get("mbn", ""),
             row.get("ho_ten", ""),
             row.get("gioi_tinh", "Nam"),
-            row.get("lop", ""),
-            row.get("sdt", "")
+            row.get("chieu_cao", ""),
+            row.get("can_nang", "")
         ]
         # Các tuần
-        for i in range(1, 16):
-            t_val = row.get(f"t{i}", "M")
-            if t_val == "K":
-                t_val = "K 🟥"
-            elif t_val == "P":
-                t_val = "P 🟢"
-            values.append(t_val)
+        # for i in range(1, 16):
+        #     t_val = row.get(f"t{i}", "M")
+        #     if t_val == "K":
+        #         t_val = "K 🟥"
+        #     elif t_val == "P":
+        #         t_val = "P 🟢"
+        #     values.append(t_val)
             
         # Điểm & cảnh báo
-        values.append(f"{float(row.get('so_lan_bt', 0)):.1f}")
-        values.append(f"{float(row.get('vi_pham', 0)):.1f}")
-        values.append(f"{float(row.get('chuyen_can', 0)):.1f}")
+        #values.append(f"{float(row.get('so_lan_bt', 0)):.1f}")
+        #values.append(f"{float(row.get('vi_pham', 0)):.1f}")
+        #values.append(f"{float(row.get('chuyen_can', 0)):.1f}")
         
-        cb = row.get("canh_bao", "")
-        values.append(cb)
+        #cb = row.get("canh_bao", "")
+        #values.append(cb)
         
         # Insert row, tag 'cam_thi' to color red if needed
-        item_id = tree.insert("", tk.END, values=values)
-        if cb == "Cấm thi":
-            tree.item(item_id, tags=('cam_thi',))
-        elif cb == "Cẩn thận cấm thi":
-            tree.item(item_id, tags=('canh_bao_cam_thi',))
+        # item_id = tree.insert("", tk.END, values=values)
+        # if cb == "Cấm thi":
+        #     tree.item(item_id, tags=('cam_thi',))
+        # elif cb == "Cẩn thận cấm thi":
+        #     tree.item(item_id, tags=('canh_bao_cam_thi',))
             
-    tree.tag_configure('cam_thi', foreground='red')
-    tree.tag_configure('canh_bao_cam_thi', foreground='orange')
+    # tree.tag_configure('cam_thi', foreground='red')
+    # tree.tag_configure('canh_bao_cam_thi', foreground='orange')
 
 
 def cap_nhat_thong_ke(ui, stats):
     """
-    Cập nhật các nhãn văn bản hiển thị thống kê tổng quan ở góc dưới màn hình.
+     Cập nhật các nhãn văn bản hiển thị thống kê tổng quan ở góc dưới màn hình.
 
-    Args:
+     Args:
         ui (dict): Dictionary chứa các widget giao diện.
-        stats (dict): Dictionary chứa dữ liệu thống kê từ model.
+         stats (dict): Dictionary chứa dữ liệu thống kê từ model.
     """
-    tong_sv = stats.get('tong_sv', 0)
-    nam = stats.get('nam', 0)
-    nu = stats.get('nu', 0)
-    ui['lbl_si_so'].config(text=f"Sĩ số: {tong_sv} (Nam: {nam}, Nữ: {nu})")
-    ui['lbl_canh_bao'].config(text=f"Cấm thi: {stats.get('cam_thi', 0)}")
-    ui['lbl_diem_tb'].config(text=f"Điểm CC TB: {stats.get('diem_cc_tb', 0):.2f}")
+    # tong_bn = stats.get('tong_bn', 0)
+    # nam = stats.get('nam', 0)
+    # nu = stats.get('nu', 0)
+    # ui['lbl_si_so'].config(text=f"Sĩ số: {tong_bn} (Nam: {nam}, Nữ: {nu})")
+    # ui['lbl_canh_bao'].config(text=f"Cấm thi: {stats.get('cam_thi', 0)}")
+    # ui['lbl_diem_tb'].config(text=f"Điểm CC TB: {stats.get('diem_cc_tb', 0):.2f}")
 
 
-def hien_thi_form_sinh_vien(parent_root, is_edit=False, current_data=None):
+def hien_thi_form_benh_nhan(parent_root, is_edit=False, current_data=None):
     """
-    Hiển thị cửa sổ Pop-up để Thêm hoặc Sửa thông tin Sinh viên.
+    Hiển thị cửa sổ Pop-up để Thêm hoặc Sửa thông tin Bệnh nhân.
 
     Args:
         parent_root (tk.Tk): Cửa sổ cha để popup luôn nổi lên trên.
         is_edit (bool): True nếu là chế độ Sửa, False nếu là Thêm mới.
-        current_data (dict): Dữ liệu của sinh viên đang được sửa (nếu có).
+        current_data (dict): Dữ liệu của bệnh nhân đang được sửa (nếu có).
 
     Returns:
         dict/None: Dictionary chứa dữ liệu người dùng nhập hoặc None nếu Hủy.
     """
     top = tk.Toplevel(parent_root)
-    top.title("Sửa Sinh viên" if is_edit else "Thêm Sinh viên")
+    top.title("Sửa Bệnh Nhân" if is_edit else "Thêm Bệnh Nhân")
     top.resizable(False, False)
     top.grab_set()
     
@@ -278,9 +278,9 @@ def hien_thi_form_sinh_vien(parent_root, is_edit=False, current_data=None):
     main_frame.pack(fill=tk.BOTH, expand=True)
     
     # --- Form fields ---
-    tk.Label(main_frame, text="MSV (*):").grid(row=0, column=0, padx=(0, 10), pady=10, sticky=tk.E)
-    ent_msv = ttk.Entry(main_frame, width=35)
-    ent_msv.grid(row=0, column=1, pady=10, sticky=tk.W)
+    tk.Label(main_frame, text="MBN (*):").grid(row=0, column=0, padx=(0, 10), pady=10, sticky=tk.E)
+    ent_mbn = ttk.Entry(main_frame, width=35)
+    ent_mbn.grid(row=0, column=1, pady=10, sticky=tk.W)
 
     tk.Label(main_frame, text="Họ tên (*):").grid(row=1, column=0, padx=(0, 10), pady=10, sticky=tk.E)
     ent_hoten = ttk.Entry(main_frame, width=35)
@@ -291,41 +291,41 @@ def hien_thi_form_sinh_vien(parent_root, is_edit=False, current_data=None):
     cbo_gioitinh.set("Nam")
     cbo_gioitinh.grid(row=2, column=1, pady=10, sticky=tk.W)
     
-    tk.Label(main_frame, text="Lớp:").grid(row=3, column=0, padx=(0, 10), pady=10, sticky=tk.E)
-    ent_lop = ttk.Entry(main_frame, width=35)
-    ent_lop.grid(row=3, column=1, pady=10, sticky=tk.W)
+    tk.Label(main_frame, text="Chiều cao(cm):").grid(row=3, column=0, padx=(0, 10), pady=10, sticky=tk.E)
+    ent_chieucao = ttk.Entry(main_frame, width=35)
+    ent_chieucao.grid(row=3, column=1, pady=10, sticky=tk.W)
 
-    tk.Label(main_frame, text="SĐT:").grid(row=4, column=0, padx=(0, 10), pady=10, sticky=tk.E)
-    ent_sdt = ttk.Entry(main_frame, width=35)
-    ent_sdt.grid(row=4, column=1, pady=10, sticky=tk.W)
+    tk.Label(main_frame, text="Cân nặng(kg):").grid(row=4, column=0, padx=(0, 10), pady=10, sticky=tk.E)
+    ent_cannang = ttk.Entry(main_frame, width=35)
+    ent_cannang.grid(row=4, column=1, pady=10, sticky=tk.W)
     
     if is_edit and current_data:
-        ent_msv.insert(0, current_data.get("msv", ""))
+        ent_mbn.insert(0, current_data.get("mbn", ""))
         ent_hoten.insert(0, current_data.get("ho_ten", ""))
         cbo_gioitinh.set(current_data.get("gioi_tinh", "Nam"))
-        ent_lop.insert(0, current_data.get("lop", ""))
-        ent_sdt.insert(0, current_data.get("sdt", ""))
+        ent_chieucao.insert(0, current_data.get("chieu_cao", ""))
+        ent_cannang.insert(0, current_data.get("can_nang", ""))
         
     def on_luu():
-        msv = ent_msv.get().strip()
+        mbn = ent_mbn.get().strip()
         hoten = ent_hoten.get().strip()
         gioi_tinh = cbo_gioitinh.get()
-        lop = ent_lop.get().strip()
-        sdt = ent_sdt.get().strip()
+        chieu_cao = ent_chieucao.get().strip()
+        can_nang = ent_cannang.get().strip()
         
-        if not msv:
-            messagebox.showwarning("Lỗi", "MSV không được để trống!", parent=top)
+        if not mbn:
+            messagebox.showwarning("Lỗi", "MBN không được để trống!", parent=top)
             return
         if not hoten:
             messagebox.showwarning("Lỗi", "Họ tên không được để trống!", parent=top)
             return
             
         result.append({
-            "msv": msv,
+            "msv": mbn,
             "ho_ten": hoten,
             "gioi_tinh": gioi_tinh,
-            "lop": lop,
-            "sdt": sdt
+            "chieu_cao": chieu_cao,
+            "can_nang": can_nang
         })
         top.destroy()
 
