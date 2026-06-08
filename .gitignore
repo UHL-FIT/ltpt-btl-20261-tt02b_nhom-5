@@ -1,6 +1,12 @@
-# Bỏ qua file nhật ký hệ thống thay đổi liên tục khi chạy thử phần mềm
+# Bỏ qua file nhật ký hệ thống thay đổi liên tục
 data/app.log
 
-# Bỏ qua các file cấu hình tạm của Python (nếu có sinh ra khi chạy)
-__pycache__/
+# Bỏ qua TOÀN BỘ thư mục __pycache__ ở bất kỳ cấp thư mục nào
+**/__pycache__/
+
+# Bỏ qua toàn bộ các file compile đuôi .pyc, .pyo nằm rải rác
 *.pyc
+*.pyo
+
+# Bỏ qua thư mục cấu hình ẩn của VS Code trên máy bạn (nếu có)
+.vscode/
