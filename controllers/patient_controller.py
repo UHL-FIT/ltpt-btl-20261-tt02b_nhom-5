@@ -271,7 +271,4 @@ class PatientController:
         """Hành động xuất bản dữ liệu: Trích xuất và sao lưu bảng dữ liệu hệ thống ra một file CSV lưu ở vị trí bất kỳ trên máy tính"""
         # Gọi hộp thoại lưu file của hệ điều hành, tự động đặt đuôi tệp tin gợi ý mặc định là .csv
         path = filedialog.asksaveasfilename(defaultextension=".csv")
-        if path: 
-            # Gọi lệnh xuất dữ liệu của Pandas để trích xuất file Excel phẳng CSV ra vị trí người dùng mong muốn
-            self.model.df.to_csv(path, index=False)
-            
+        if path: self.model.df.to_csv(path, index=False)
