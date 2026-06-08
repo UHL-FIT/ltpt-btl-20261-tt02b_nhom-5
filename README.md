@@ -54,11 +54,11 @@ Bẫy Lỗi Thao Tác Sai Vị Trí: Nếu người dùng nhấn nút "Xóa bệ
 
 ## 🚀 Hướng Dẫn Cài Đặt & Khởi Chạy
 1. Cài đặt các thư viện phụ thuộc
-Hệ thống yêu cầu cài đặt thư viện xử lý dữ liệu nâng cao pandas:
+* Hệ thống yêu cầu cài đặt thư viện xử lý dữ liệu nâng cao pandas:
 
 pip install pandas
 2. Khởi chạy ứng dụng
-Di chuyển vào thư mục gốc của dự án và chạy tệp mồi bằng câu lệnh:
+* Di chuyển vào thư mục gốc của dự án và chạy tệp mồi bằng câu lệnh:
 
-python main.py
+* python main.py
 © Dự án được phát triển và hoàn thiện bởi Nhóm 5 - UHL FIT.
