@@ -1,0 +1,140 @@
+2026-05-28 10:14:51 | INFO     | patient_model._load_data | Nạp cơ sở dữ liệu bệnh nhân từ file CSV thành công (9 dòng).
+2026-05-28 10:14:52 | INFO     | patient_controller.__init__ | Ứng dụng Quản lý Bệnh nhân bắt đầu khởi chạy cấu hình.
+2026-05-28 10:20:09 | INFO     | patient_model._load_data | Nạp cơ sở dữ liệu bệnh nhân từ file CSV thành công (9 dòng).
+2026-05-28 10:20:10 | INFO     | patient_controller.__init__ | Ứng dụng Quản lý Bệnh nhân bắt đầu khởi chạy.
+2026-05-28 10:20:25 | DEBUG    | patient_controller.show_detail_panel | Người dùng click xem hồ sơ chi tiết của bệnh nhân: Tâm
+2026-05-28 10:20:31 | DEBUG    | patient_controller.show_detail_panel | Người dùng click xem hồ sơ chi tiết của bệnh nhân: Tâm
+2026-05-28 10:20:35 | DEBUG    | patient_controller.show_detail_panel | Người dùng click xem hồ sơ chi tiết của bệnh nhân: Tâm
+2026-05-28 10:20:52 | DEBUG    | patient_controller.show_detail_panel | Người dùng click xem hồ sơ chi tiết của bệnh nhân: hh
+2026-05-28 10:20:52 | DEBUG    | patient_controller.show_detail_panel | Người dùng click xem hồ sơ chi tiết của bệnh nhân: gg
+2026-05-28 10:20:52 | DEBUG    | patient_controller.show_detail_panel | Người dùng click xem hồ sơ chi tiết của bệnh nhân: nan
+2026-05-28 10:20:53 | DEBUG    | patient_controller.show_detail_panel | Người dùng click xem hồ sơ chi tiết của bệnh nhân: 77
+2026-05-28 10:20:53 | DEBUG    | patient_controller.show_detail_panel | Người dùng click xem hồ sơ chi tiết của bệnh nhân: hhh
+2026-05-28 10:20:54 | DEBUG    | patient_controller.show_detail_panel | Người dùng click xem hồ sơ chi tiết của bệnh nhân: Tâm
+2026-05-28 10:20:55 | INFO     | patient_controller.show_stats | Người dùng yêu cầu xem thống kê chỉ số trung bình BMI.
+2026-05-28 10:20:56 | INFO     | patient_controller.show_about | Người dùng xem thông tin giới thiệu phần mềm.
+2026-05-28 10:24:35 | INFO     | patient_model._load_data | Nạp cơ sở dữ liệu bệnh nhân từ file CSV thành công (9 dòng).
+2026-05-28 10:24:35 | INFO     | patient_controller.__init__ | Ứng dụng Quản lý Bệnh nhân bắt đầu khởi chạy.
+2026-05-28 10:24:37 | INFO     | patient_controller.handle_double_click | Người dùng double-click vào vùng cột ID để yêu cầu sắp xếp.
+2026-05-28 10:24:37 | INFO     | patient_model.sort_by_name | Đã sắp xếp lại danh sách bệnh nhân theo Tên (Chiều: A-Z)
+2026-05-28 10:24:37 | DEBUG    | patient_model.save | Đã lưu đồng bộ dữ liệu RAM xuống file CSV cứng.
+2026-05-28 10:24:42 | INFO     | patient_controller.handle_double_click | Người dùng double-click vào vùng cột ID để yêu cầu sắp xếp.
+2026-05-28 10:24:42 | INFO     | patient_model.sort_by_name | Đã sắp xếp lại danh sách bệnh nhân theo Tên (Chiều: Z-A)
+2026-05-28 10:24:42 | DEBUG    | patient_model.save | Đã lưu đồng bộ dữ liệu RAM xuống file CSV cứng.
+2026-05-28 10:24:43 | INFO     | patient_controller.handle_double_click | Người dùng double-click vào vùng cột ID để yêu cầu sắp xếp.
+2026-05-28 10:24:43 | INFO     | patient_model.sort_by_name | Đã sắp xếp lại danh sách bệnh nhân theo Tên (Chiều: A-Z)
+2026-05-28 10:24:43 | DEBUG    | patient_model.save | Đã lưu đồng bộ dữ liệu RAM xuống file CSV cứng.
+2026-05-28 10:24:44 | INFO     | patient_controller.handle_double_click | Người dùng double-click vào vùng cột ID để yêu cầu sắp xếp.
+2026-05-28 10:24:44 | INFO     | patient_model.sort_by_name | Đã sắp xếp lại danh sách bệnh nhân theo Tên (Chiều: Z-A)
+2026-05-28 10:24:44 | DEBUG    | patient_model.save | Đã lưu đồng bộ dữ liệu RAM xuống file CSV cứng.
+2026-05-28 10:24:57 | INFO     | patient_controller.handle_double_click | Người dùng double-click vào vùng cột ID để yêu cầu sắp xếp.
+2026-05-28 10:24:57 | INFO     | patient_model.sort_by_name | Đã sắp xếp lại danh sách bệnh nhân theo Tên (Chiều: A-Z)
+2026-05-28 10:24:57 | DEBUG    | patient_model.save | Đã lưu đồng bộ dữ liệu RAM xuống file CSV cứng.
+2026-05-28 10:25:03 | INFO     | patient_controller.handle_double_click | Người dùng double-click vào vùng cột ID để yêu cầu sắp xếp.
+2026-05-28 10:25:03 | INFO     | patient_model.sort_by_name | Đã sắp xếp lại danh sách bệnh nhân theo Tên (Chiều: Z-A)
+2026-05-28 10:25:03 | DEBUG    | patient_model.save | Đã lưu đồng bộ dữ liệu RAM xuống file CSV cứng.
+2026-05-28 10:25:03 | INFO     | patient_controller.handle_double_click | Người dùng double-click vào vùng cột ID để yêu cầu sắp xếp.
+2026-05-28 10:25:03 | INFO     | patient_model.sort_by_name | Đã sắp xếp lại danh sách bệnh nhân theo Tên (Chiều: A-Z)
+2026-05-28 10:25:03 | DEBUG    | patient_model.save | Đã lưu đồng bộ dữ liệu RAM xuống file CSV cứng.
+2026-05-28 10:25:12 | INFO     | patient_controller.handle_double_click | Người dùng double-click vào vùng cột ID để yêu cầu sắp xếp.
+2026-05-28 10:25:12 | INFO     | patient_model.sort_by_name | Đã sắp xếp lại danh sách bệnh nhân theo Tên (Chiều: Z-A)
+2026-05-28 10:25:12 | DEBUG    | patient_model.save | Đã lưu đồng bộ dữ liệu RAM xuống file CSV cứng.
+2026-05-28 10:25:13 | INFO     | patient_controller.handle_double_click | Người dùng double-click vào vùng cột ID để yêu cầu sắp xếp.
+2026-05-28 10:25:13 | INFO     | patient_model.sort_by_name | Đã sắp xếp lại danh sách bệnh nhân theo Tên (Chiều: A-Z)
+2026-05-28 10:25:13 | DEBUG    | patient_model.save | Đã lưu đồng bộ dữ liệu RAM xuống file CSV cứng.
+2026-05-28 10:25:15 | INFO     | patient_controller.handle_double_click | Người dùng double-click vào vùng cột ID để yêu cầu sắp xếp.
+2026-05-28 10:25:15 | INFO     | patient_model.sort_by_name | Đã sắp xếp lại danh sách bệnh nhân theo Tên (Chiều: Z-A)
+2026-05-28 10:25:15 | DEBUG    | patient_model.save | Đã lưu đồng bộ dữ liệu RAM xuống file CSV cứng.
+2026-05-28 10:25:18 | DEBUG    | patient_controller.show_detail_panel | Người dùng click xem hồ sơ chi tiết của bệnh nhân: nan
+2026-05-28 10:25:21 | DEBUG    | patient_model.save | Đã lưu đồng bộ dữ liệu RAM xuống file CSV cứng.
+2026-05-28 10:25:21 | WARNING  | patient_controller.delete | Đã xóa vĩnh viễn hồ sơ bệnh nhân khỏi hệ thống: nan
+2026-05-28 10:25:23 | INFO     | patient_controller.handle_double_click | Người dùng double-click vào vùng cột ID để yêu cầu sắp xếp.
+2026-05-28 10:25:23 | INFO     | patient_model.sort_by_name | Đã sắp xếp lại danh sách bệnh nhân theo Tên (Chiều: A-Z)
+2026-05-28 10:25:23 | DEBUG    | patient_model.save | Đã lưu đồng bộ dữ liệu RAM xuống file CSV cứng.
+2026-05-28 10:25:24 | INFO     | patient_controller.handle_double_click | Người dùng double-click vào vùng cột ID để yêu cầu sắp xếp.
+2026-05-28 10:25:24 | INFO     | patient_model.sort_by_name | Đã sắp xếp lại danh sách bệnh nhân theo Tên (Chiều: Z-A)
+2026-05-28 10:25:24 | DEBUG    | patient_model.save | Đã lưu đồng bộ dữ liệu RAM xuống file CSV cứng.
+2026-05-28 10:25:25 | INFO     | patient_controller.handle_double_click | Người dùng double-click vào vùng cột ID để yêu cầu sắp xếp.
+2026-05-28 10:25:25 | INFO     | patient_model.sort_by_name | Đã sắp xếp lại danh sách bệnh nhân theo Tên (Chiều: A-Z)
+2026-05-28 10:25:25 | DEBUG    | patient_model.save | Đã lưu đồng bộ dữ liệu RAM xuống file CSV cứng.
+2026-05-28 10:25:28 | DEBUG    | patient_controller.show_detail_panel | Người dùng click xem hồ sơ chi tiết của bệnh nhân: 44
+2026-05-28 10:25:29 | INFO     | patient_controller.open_edit_dialog | Mở form chỉnh sửa thông tin của bệnh nhân: 44
+2026-05-28 10:25:34 | DEBUG    | patient_model.save | Đã lưu đồng bộ dữ liệu RAM xuống file CSV cứng.
+2026-05-28 10:25:34 | INFO     | patient_controller.save_action | Đã cập nhật thay đổi thành công hồ sơ bệnh nhân ID gốc: 0
+2026-05-28 10:25:36 | DEBUG    | patient_controller.show_detail_panel | Người dùng click xem hồ sơ chi tiết của bệnh nhân: 77
+2026-05-28 10:25:37 | INFO     | patient_controller.open_edit_dialog | Mở form chỉnh sửa thông tin của bệnh nhân: 77
+2026-05-28 10:25:47 | DEBUG    | patient_model.save | Đã lưu đồng bộ dữ liệu RAM xuống file CSV cứng.
+2026-05-28 10:25:47 | INFO     | patient_controller.save_action | Đã cập nhật thay đổi thành công hồ sơ bệnh nhân ID gốc: 1
+2026-05-28 10:25:52 | DEBUG    | patient_controller.show_detail_panel | Người dùng click xem hồ sơ chi tiết của bệnh nhân: ga
+2026-05-28 10:25:53 | INFO     | patient_controller.open_edit_dialog | Mở form chỉnh sửa thông tin của bệnh nhân: ga
+2026-05-28 10:26:00 | DEBUG    | patient_model.save | Đã lưu đồng bộ dữ liệu RAM xuống file CSV cứng.
+2026-05-28 10:26:00 | INFO     | patient_controller.save_action | Đã cập nhật thay đổi thành công hồ sơ bệnh nhân ID gốc: 3
+2026-05-28 10:26:02 | DEBUG    | patient_controller.show_detail_panel | Người dùng click xem hồ sơ chi tiết của bệnh nhân: gg
+2026-05-28 10:26:03 | INFO     | patient_controller.open_edit_dialog | Mở form chỉnh sửa thông tin của bệnh nhân: gg
+2026-05-28 10:26:12 | DEBUG    | patient_model.save | Đã lưu đồng bộ dữ liệu RAM xuống file CSV cứng.
+2026-05-28 10:26:12 | INFO     | patient_controller.save_action | Đã cập nhật thay đổi thành công hồ sơ bệnh nhân ID gốc: 4
+2026-05-28 10:26:14 | DEBUG    | patient_controller.show_detail_panel | Người dùng click xem hồ sơ chi tiết của bệnh nhân: hh
+2026-05-28 10:26:15 | INFO     | patient_controller.open_edit_dialog | Mở form chỉnh sửa thông tin của bệnh nhân: hh
+2026-05-28 10:26:20 | DEBUG    | patient_model.save | Đã lưu đồng bộ dữ liệu RAM xuống file CSV cứng.
+2026-05-28 10:26:20 | INFO     | patient_controller.save_action | Đã cập nhật thay đổi thành công hồ sơ bệnh nhân ID gốc: 5
+2026-05-28 10:26:23 | DEBUG    | patient_controller.show_detail_panel | Người dùng click xem hồ sơ chi tiết của bệnh nhân: hhh
+2026-05-28 10:26:23 | INFO     | patient_controller.open_edit_dialog | Mở form chỉnh sửa thông tin của bệnh nhân: hhh
+2026-05-28 10:26:29 | DEBUG    | patient_model.save | Đã lưu đồng bộ dữ liệu RAM xuống file CSV cứng.
+2026-05-28 10:26:29 | INFO     | patient_controller.save_action | Đã cập nhật thay đổi thành công hồ sơ bệnh nhân ID gốc: 6
+2026-05-28 10:26:31 | DEBUG    | patient_controller.show_detail_panel | Người dùng click xem hồ sơ chi tiết của bệnh nhân: hyu
+2026-05-28 10:26:32 | INFO     | patient_controller.open_edit_dialog | Mở form chỉnh sửa thông tin của bệnh nhân: hyu
+2026-05-28 10:26:36 | DEBUG    | patient_model.save | Đã lưu đồng bộ dữ liệu RAM xuống file CSV cứng.
+2026-05-28 10:26:36 | INFO     | patient_controller.save_action | Đã cập nhật thay đổi thành công hồ sơ bệnh nhân ID gốc: 7
+2026-05-28 10:26:42 | INFO     | patient_controller.handle_double_click | Người dùng double-click vào vùng cột ID để yêu cầu sắp xếp.
+2026-05-28 10:26:42 | INFO     | patient_model.sort_by_name | Đã sắp xếp lại danh sách bệnh nhân theo Tên (Chiều: Z-A)
+2026-05-28 10:26:42 | DEBUG    | patient_model.save | Đã lưu đồng bộ dữ liệu RAM xuống file CSV cứng.
+2026-05-28 10:26:44 | INFO     | patient_controller.handle_double_click | Người dùng double-click vào vùng cột ID để yêu cầu sắp xếp.
+2026-05-28 10:26:44 | INFO     | patient_model.sort_by_name | Đã sắp xếp lại danh sách bệnh nhân theo Tên (Chiều: A-Z)
+2026-05-28 10:26:44 | DEBUG    | patient_model.save | Đã lưu đồng bộ dữ liệu RAM xuống file CSV cứng.
+2026-05-28 10:26:45 | INFO     | patient_controller.handle_double_click | Người dùng double-click vào vùng cột ID để yêu cầu sắp xếp.
+2026-05-28 10:26:45 | INFO     | patient_model.sort_by_name | Đã sắp xếp lại danh sách bệnh nhân theo Tên (Chiều: Z-A)
+2026-05-28 10:26:45 | DEBUG    | patient_model.save | Đã lưu đồng bộ dữ liệu RAM xuống file CSV cứng.
+2026-05-28 10:26:53 | DEBUG    | patient_controller.show_detail_panel | Người dùng click xem hồ sơ chi tiết của bệnh nhân: Định
+2026-05-28 10:26:54 | INFO     | patient_controller.open_edit_dialog | Mở form chỉnh sửa thông tin của bệnh nhân: Định
+2026-05-28 10:27:04 | DEBUG    | patient_model.save | Đã lưu đồng bộ dữ liệu RAM xuống file CSV cứng.
+2026-05-28 10:27:04 | INFO     | patient_controller.save_action | Đã cập nhật thay đổi thành công hồ sơ bệnh nhân ID gốc: 0
+2026-05-28 10:27:07 | INFO     | patient_controller.handle_double_click | Người dùng double-click vào vùng cột ID để yêu cầu sắp xếp.
+2026-05-28 10:27:07 | INFO     | patient_model.sort_by_name | Đã sắp xếp lại danh sách bệnh nhân theo Tên (Chiều: A-Z)
+2026-05-28 10:27:07 | DEBUG    | patient_model.save | Đã lưu đồng bộ dữ liệu RAM xuống file CSV cứng.
+2026-05-28 10:37:40 | INFO     | patient_model._load_data | Nạp cơ sở dữ liệu bệnh nhân từ file CSV thành công (8 dòng).
+2026-05-28 10:37:41 | INFO     | patient_controller.__init__ | Ứng dụng Quản lý Bệnh nhân bắt đầu khởi chạy.
+2026-05-28 10:37:45 | DEBUG    | patient_controller.show_detail_panel | Người dùng click xem hồ sơ chi tiết của bệnh nhân: Tâm
+2026-05-28 10:37:46 | DEBUG    | patient_controller.show_detail_panel | Người dùng click xem hồ sơ chi tiết của bệnh nhân: An
+2026-05-28 10:37:47 | DEBUG    | patient_controller.show_detail_panel | Người dùng click xem hồ sơ chi tiết của bệnh nhân: Bình
+2026-05-28 10:37:47 | DEBUG    | patient_controller.show_detail_panel | Người dùng click xem hồ sơ chi tiết của bệnh nhân: Cường
+2026-05-28 10:37:48 | DEBUG    | patient_controller.show_detail_panel | Người dùng click xem hồ sơ chi tiết của bệnh nhân: Diệu
+2026-05-28 10:37:48 | DEBUG    | patient_controller.show_detail_panel | Người dùng click xem hồ sơ chi tiết của bệnh nhân: Huy
+2026-05-28 10:37:49 | DEBUG    | patient_controller.show_detail_panel | Người dùng click xem hồ sơ chi tiết của bệnh nhân: Nam
+2026-05-28 10:37:49 | DEBUG    | patient_controller.show_detail_panel | Người dùng click xem hồ sơ chi tiết của bệnh nhân: Tâm
+2026-05-28 10:37:50 | DEBUG    | patient_controller.show_detail_panel | Người dùng click xem hồ sơ chi tiết của bệnh nhân: Bình
+2026-05-28 10:37:50 | INFO     | patient_controller.open_add_dialog | Mở form giao diện thêm bệnh nhân mới.
+2026-05-28 10:38:01 | WARNING  | patient_controller.save_action | Thêm thất bại: Để trống trường Họ tên.
+2026-05-28 10:40:53 | INFO     | patient_model._load_data | Nạp cơ sở dữ liệu bệnh nhân từ file CSV thành công (8 dòng).
+2026-05-28 10:40:54 | INFO     | patient_controller.__init__ | Ứng dụng Quản lý Bệnh nhân bắt đầu khởi chạy.
+2026-05-28 10:41:06 | DEBUG    | patient_controller.show_detail_panel | Người dùng click xem hồ sơ chi tiết của bệnh nhân: An
+2026-05-28 10:42:06 | INFO     | patient_controller.show_stats | Người dùng yêu cầu xem thống kê chỉ số trung bình BMI.
+2026-05-28 10:45:36 | INFO     | patient_model._load_data | Nạp cơ sở dữ liệu bệnh nhân từ file CSV thành công (8 dòng).
+2026-05-28 10:45:36 | INFO     | patient_controller.__init__ | Ứng dụng Quản lý Bệnh nhân bắt đầu khởi chạy.
+2026-05-28 10:45:40 | INFO     | patient_controller.open_add_dialog | Mở form giao diện thêm bệnh nhân mới.
+2026-05-28 10:48:20 | INFO     | patient_model._load_data | Nạp cơ sở dữ liệu bệnh nhân từ file CSV thành công (8 dòng).
+2026-05-28 10:48:20 | INFO     | patient_controller.__init__ | Ứng dụng Quản lý Bệnh nhân bắt đầu khởi chạy.
+2026-05-28 10:48:25 | INFO     | patient_model.sort_by_name | Đã sắp xếp lại danh sách bệnh nhân theo Tên (Chiều: A-Z)
+2026-05-28 10:48:25 | DEBUG    | patient_model.save | Đã lưu đồng bộ dữ liệu RAM xuống file CSV cứng.
+2026-05-28 10:48:27 | INFO     | patient_model.sort_by_name | Đã sắp xếp lại danh sách bệnh nhân theo Tên (Chiều: Z-A)
+2026-05-28 10:48:27 | DEBUG    | patient_model.save | Đã lưu đồng bộ dữ liệu RAM xuống file CSV cứng.
+2026-05-28 10:48:28 | INFO     | patient_model.sort_by_name | Đã sắp xếp lại danh sách bệnh nhân theo Tên (Chiều: A-Z)
+2026-05-28 10:48:28 | DEBUG    | patient_model.save | Đã lưu đồng bộ dữ liệu RAM xuống file CSV cứng.
+2026-05-28 10:51:27 | INFO     | patient_model._load_data | Nạp cơ sở dữ liệu thành công (8 dòng).
+2026-05-28 18:41:39 | INFO     | patient_model._load_data | Nạp cơ sở dữ liệu thành công (8 dòng).
+2026-05-29 08:13:23 | INFO     | patient_model._load_data | Nạp cơ sở dữ liệu thành công (8 dòng).
+2026-05-29 08:32:20 | INFO     | patient_model._load_data | Nạp cơ sở dữ liệu thành công (8 dòng).
+2026-05-29 08:42:52 | INFO     | patient_model._load_data | Nạp cơ sở dữ liệu thành công (8 dòng).
+2026-05-31 10:41:20 | INFO     | patient_model._load_data | Nạp cơ sở dữ liệu thành công (8 dòng).
+2026-06-07 15:55:14 | INFO     | patient_model._load_data | Nạp cơ sở dữ liệu thành công (10 dòng).
+2026-06-07 15:57:25 [patient_model] INFO - Nạp cơ sở dữ liệu thành công (10 dòng).
+2026-06-07 16:02:37 [patient_model] INFO - Nạp cơ sở dữ liệu thành công (10 dòng).
