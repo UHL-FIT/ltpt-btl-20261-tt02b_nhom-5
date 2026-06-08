@@ -16,7 +16,7 @@ Dự án được phân rã chặt chẽ theo mô hình **MVC (Model - View - Co
 ## 🛠️ Công Nghệ & Thư Viện Sử Dụng
 * **Ngôn ngữ chính**: Python.
 * **Giao diện đồ họa (GUI)**: Tkinter & TTK (Themed Tkinter) tích hợp bộ theme hệ thống mở rộng `clam` giúp tùy biến sâu màu sắc.
-* **Xử lý dữ liệu & Thống kê**: `Pandas` và `Numpy` (Vectorization tăng tốc xử lý mảng tốc độ cao).
+* **Xử lý dữ liệu & Thống kê**: `Pandas` (Vectorization tăng tốc xử lý mảng tốc độ cao).
 * **Nhật ký vận hành**: Thư viện `Logging` tiêu chuẩn để kiểm soát tiến trình chạy ngầm của hệ thống.
 
 ---
