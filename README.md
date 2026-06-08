@@ -42,7 +42,7 @@ QL_BenhNhan/
 │   └── logger.py         # Tiện ích ghi log lịch sử đồng thời ra Terminal và File
 │
 └── main.py               # Điểm mồi (Entry-point) khởi chạy toàn bộ phần mềm
-
+```
 🛡️ Cơ Chế Xử Lý Ngoại Lệ & Kiểm Thử Phòng Vệ (Exception Handling)
 Ứng dụng được thiết kế dựa trên tư duy lập trình phòng vệ, đảm bảo hệ thống hoạt động ổn định trước các hành vi sai lệch của người dùng:
 
