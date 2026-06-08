@@ -43,7 +43,7 @@ QL_BenhNhan/
 │
 └── main.py               # Điểm mồi (Entry-point) khởi chạy toàn bộ phần mềm
 ```
-##🛡️ Cơ Chế Xử Lý Ngoại Lệ & Kiểm Thử Phòng Vệ (Exception Handling)
+## 🛡️ Cơ Chế Xử Lý Ngoại Lệ & Kiểm Thử Phòng Vệ (Exception Handling)
 Ứng dụng được thiết kế dựa trên tư duy lập trình phòng vệ, đảm bảo hệ thống hoạt động ổn định trước các hành vi sai lệch của người dùng:
 
 Chặn Dữ Liệu Số Âm / Sai Định Dạng: Mọi trường dữ liệu số (Tuổi, Cân nặng, Chiều cao) đều được Controller lọc qua hàm _validate_positive_number. Nếu người dùng nhập chữ hoặc số ≤0, hệ thống lập tức chặn đứng và cảnh báo trực quan.
@@ -52,7 +52,7 @@ Khắc Phục Ô Trống NaN Trong CSV: Khi đọc tệp dữ liệu phẳng, Pa
 
 Bẫy Lỗi Thao Tác Sai Vị Trí: Nếu người dùng nhấn nút "Xóa bệnh nhân" hoặc "Sửa thông tin" khi chưa chọn bất kỳ dòng nào trên bảng danh sách Treeview, hệ thống sẽ bẫy lỗi bằng mệnh đề điều kiện, đưa ra hộp thoại nhắc nhở thay vì làm treo luồng chương trình.
 
-##🚀 Hướng Dẫn Cài Đặt & Khởi Chạy
+## 🚀 Hướng Dẫn Cài Đặt & Khởi Chạy
 1. Cài đặt các thư viện phụ thuộc
 Hệ thống yêu cầu cài đặt thư viện xử lý dữ liệu nâng cao pandas:
 
