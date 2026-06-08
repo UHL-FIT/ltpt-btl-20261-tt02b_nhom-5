@@ -56,11 +56,9 @@ Bẫy Lỗi Thao Tác Sai Vị Trí: Nếu người dùng nhấn nút "Xóa bệ
 1. Cài đặt các thư viện phụ thuộc
 Hệ thống yêu cầu cài đặt thư viện xử lý dữ liệu nâng cao pandas:
 
-Bash
 pip install pandas
 2. Khởi chạy ứng dụng
 Di chuyển vào thư mục gốc của dự án và chạy tệp mồi bằng câu lệnh:
 
-Bash
 python main.py
 © Dự án được phát triển và hoàn thiện bởi Nhóm 5 - UHL FIT.
