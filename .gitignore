@@ -1,0 +1,6 @@
+# Bỏ qua file nhật ký hệ thống thay đổi liên tục khi chạy thử phần mềm
+data/app.log
+
+# Bỏ qua các file cấu hình tạm của Python (nếu có sinh ra khi chạy)
+__pycache__/
+*.pyc
