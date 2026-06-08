@@ -53,11 +53,11 @@ Khắc Phục Ô Trống NaN Trong CSV: Khi đọc tệp dữ liệu phẳng, Pa
 Bẫy Lỗi Thao Tác Sai Vị Trí: Nếu người dùng nhấn nút "Xóa bệnh nhân" hoặc "Sửa thông tin" khi chưa chọn bất kỳ dòng nào trên bảng danh sách Treeview, hệ thống sẽ bẫy lỗi bằng mệnh đề điều kiện, đưa ra hộp thoại nhắc nhở thay vì làm treo luồng chương trình.
 
 ## 🚀 Hướng Dẫn Cài Đặt & Khởi Chạy
-1. Cài đặt các thư viện phụ thuộc
+* **1. Cài đặt các thư viện phụ thuộc**
 * Hệ thống yêu cầu cài đặt thư viện xử lý dữ liệu nâng cao pandas:
 
 pip install pandas
-2. Khởi chạy ứng dụng
+* **2. Khởi chạy ứng dụng**
 * Di chuyển vào thư mục gốc của dự án và chạy tệp mồi bằng câu lệnh:
 
 * python main.py
