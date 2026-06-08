@@ -60,5 +60,5 @@ pip install pandas
 * **2. Khởi chạy ứng dụng**
 * Di chuyển vào thư mục gốc của dự án và chạy tệp mồi bằng câu lệnh:
 
-* python main.py
-© Dự án được phát triển và hoàn thiện bởi Nhóm 5 - UHL FIT.
+python main.py
+* **© Dự án được phát triển và hoàn thiện bởi Nhóm 5 - UHL FIT.**
